@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with this project
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please check existing issues first. For sensitive security vulnerabilities, follow the repository's Security policy instead of sharing details here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Explain the problem and, if helpful, what you expected instead.
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce (if applicable)
+      description: Include a minimal example or sequence of steps if you can.
+      placeholder: |
+        1. Open or run ...
+        2. Do ...
+        3. Observe ...
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version or revision (if known)
+      placeholder: Release version, commit, or branch
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment (optional)
+      description: For example, operating system, application or game version, device, or platform.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Include relevant logs, screenshots, or examples. Do not post passwords, tokens, personal data, or sensitive security details.
+    validations:
+      required: false

@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome! Please check existing issues first. Suggestions are considered in the context of the project's goals and maintenance needs, and cannot be guaranteed.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the change or improvement you have in mind.
+      placeholder: Explain the proposed feature or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why would it be useful? (optional)
+      description: Describe the problem this solves or who would benefit.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Add examples, mock-ups, screenshots, or alternative approaches if useful.
+    validations:
+      required: false
